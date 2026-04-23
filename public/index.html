@@ -1,0 +1,1820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happu Décor | Luxury Home Décor & Interior Design | USA</title>
+    <meta name="description" content="Happu Décor transforms living spaces into luxury sanctuaries across the USA. Premium interior design, custom furnishings, and exclusive home décor collections.">
+    <meta name="keywords" content="luxury home decor, interior design USA, premium furnishings, custom home decor, high-end interior design">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="#">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    
+    <style>
+        /* Color Palette Variables */
+        :root {
+            --primary-dark: #0E21A0;
+            --primary-medium: #4D2FB2;
+            --primary-light: #9D44C0;
+            --accent: #F375C2;
+            --text-dark: #222222;
+            --text-light: #f9f9f9;
+            --background-light: #f8f8f8;
+            --white: #ffffff;
+            --gray-light: #eaeaea;
+            --gray-medium: #aaaaaa;
+        }
+        
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--primary-dark);
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary-medium), var(--accent));
+            border-radius: 2px;
+        }
+        
+        p {
+            margin-bottom: 1.2rem;
+            font-size: 1.1rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 35px;
+            background: linear-gradient(to right, var(--primary-medium), var(--primary-light));
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background: linear-gradient(to right, var(--primary-dark), var(--primary-medium));
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-alt {
+            background-color: var(--background-light);
+        }
+        
+        /* Header & Navigation */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--accent);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 35px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary-medium);
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            font-size: 1.5rem;
+            background: none;
+            border: none;
+            color: var(--primary-dark);
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(14, 33, 160, 0.85), rgba(77, 47, 178, 0.8)), url('https://images.unsplash.com/photo-1615529328331-f8917597711f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            color: var(--white);
+            text-align: center;
+            margin-top: 80px;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            color: var(--white);
+            font-size: 4rem;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2.5rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .about-img {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .about-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+        
+        .about-img:hover img {
+            transform: scale(1.05);
+        }
+        
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background-color: var(--white);
+            padding: 40px 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            color: var(--primary-medium);
+            margin-bottom: 20px;
+        }
+        
+        .service-card h3 {
+            color: var(--primary-dark);
+        }
+        
+        /* Portfolio Section */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        
+        .portfolio-item {
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            height: 300px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .portfolio-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .portfolio-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .portfolio-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(14, 33, 160, 0.9), transparent);
+            color: var(--white);
+            padding: 30px 20px 20px;
+            transform: translateY(100%);
+            transition: transform 0.5s ease;
+        }
+        
+        .portfolio-item:hover .portfolio-overlay {
+            transform: translateY(0);
+        }
+        
+        /* Testimonials Section */
+        .testimonials-slider {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .testimonial {
+            background-color: var(--white);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .client-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .client-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 15px;
+        }
+        
+        .client-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .stars {
+            color: #FFD700;
+            margin-bottom: 10px;
+        }
+        
+        /* Contact Section */
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+        
+        .contact-info h3 {
+            color: var(--primary-dark);
+            margin-bottom: 20px;
+        }
+        
+        .contact-detail {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(to right, var(--primary-medium), var(--primary-light));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.2rem;
+            margin-right: 15px;
+        }
+        
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid var(--gray-light);
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        .contact-form textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        
+        .map-container {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            height: 400px;
+            margin-top: 30px;
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--primary-dark);
+            color: var(--text-light);
+            padding: 70px 0 30px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .footer-column h3 {
+            color: var(--white);
+            margin-bottom: 25px;
+            font-size: 1.5rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+        
+        .social-icons {
+            display: flex;
+            margin-top: 20px;
+        }
+        
+        .social-icons a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: var(--white);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            background-color: var(--accent);
+            transform: translateY(-5px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+        
+        /* Policy Pages */
+        .policy-page {
+            margin-top: 140px;
+            padding: 60px 0;
+            min-height: calc(100vh - 300px);
+        }
+        
+        .policy-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .policy-header {
+            margin-bottom: 40px;
+            border-bottom: 1px solid var(--gray-light);
+            padding-bottom: 20px;
+        }
+        
+        .policy-header h1 {
+            font-size: 2.8rem;
+            color: var(--primary-dark);
+        }
+        
+        .policy-header p {
+            font-size: 1.1rem;
+            color: var(--gray-medium);
+        }
+        
+        .policy-section {
+            margin-bottom: 40px;
+        }
+        
+        .policy-section h2 {
+            font-size: 1.8rem;
+            color: var(--primary-medium);
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        
+        .policy-section h2:after {
+            display: none;
+        }
+        
+        .policy-section h3 {
+            font-size: 1.4rem;
+            color: var(--primary-light);
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        
+        .policy-section ul, .policy-section ol {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .policy-section li {
+            margin-bottom: 10px;
+        }
+        
+        .policy-section table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        
+        .policy-section th, .policy-section td {
+            border: 1px solid var(--gray-light);
+            padding: 12px 15px;
+            text-align: left;
+        }
+        
+        .policy-section th {
+            background-color: var(--background-light);
+            font-weight: 600;
+        }
+        
+        .policy-back-btn {
+            display: inline-block;
+            margin-top: 40px;
+            text-decoration: none;
+            color: var(--primary-medium);
+            font-weight: 600;
+        }
+        
+        .policy-back-btn i {
+            margin-right: 8px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 3rem;
+            }
+            
+            h2 {
+                font-size: 2.2rem;
+            }
+            
+            .about-content, .contact-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero h1 {
+                font-size: 3.2rem;
+            }
+            
+            .policy-page {
+                margin-top: 120px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                background-color: var(--white);
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 0;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                transform: translateY(-150%);
+                transition: transform 0.5s ease;
+                z-index: 100;
+            }
+            
+            .nav-links.active {
+                transform: translateY(0);
+            }
+            
+            .nav-links li {
+                margin: 15px 0;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            section {
+                padding: 60px 0;
+            }
+            
+            .policy-header h1 {
+                font-size: 2.2rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+            
+            .btn {
+                padding: 12px 25px;
+                font-size: 1rem;
+            }
+            
+            .policy-section h2 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Happu<span>Décor</span></a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">Our Story</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#testimonials">Testimonials</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content (Dynamically loaded based on page) -->
+    <main id="content">
+        <!-- Homepage content will be loaded here by JavaScript -->
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Happu Décor</h3>
+                    <p>Creating extraordinary living experiences through exceptional design, craftsmanship, and attention to detail.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-houzz"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">Our Story</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#portfolio">Portfolio</a></li>
+                        <li><a href="index.html#testimonials">Testimonials</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html#services">Interior Design</a></li>
+                        <li><a href="index.html#services">Custom Furniture</a></li>
+                        <li><a href="index.html#services">Color Consultation</a></li>
+                        <li><a href="index.html#services">Home Staging</a></li>
+                        <li><a href="index.html#services">Project Management</a></li>
+                        <li><a href="index.html#services">Procurement</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" id="privacyLink">Privacy Policy</a></li>
+                        <li><a href="#" id="termsLink">Terms of Service</a></li>
+                        <li><a href="#" id="cookieLink">Cookie Policy</a></li>
+                        <li><a href="#" id="disclaimerLink">Disclaimer</a></li>
+                        <li><a href="#" id="shippingLink">Shipping & Returns</a></li>
+                        <li><a href="#" id="accessibilityLink">Accessibility Statement</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Happu Décor. All rights reserved. Luxury Home Décor & Interior Design Services Across USA.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    
+    <script>
+        // Homepage content (main landing page)
+        const homepageContent = `
+            <!-- Hero Section -->
+            <section class="hero" id="home">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>Transform Your Space Into a Luxury Sanctuary</h1>
+                        <p>Happu Décor creates bespoke luxury interiors across the USA, blending exquisite design with unparalleled craftsmanship for homes that reflect your unique style and elevate everyday living.</p>
+                        <a href="#contact" class="btn">Schedule a Design Consultation</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about">
+                <div class="container">
+                    <h2>Our Story</h2>
+                    <div class="about-content">
+                        <div class="about-img">
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1758&q=80" alt="Happu Décor founder in a luxury designed living room">
+                        </div>
+                        <div class="about-text">
+                            <h3>Crafting Luxury Since 2010</h3>
+                            <p>Founded by Isabella Sterling in New York City, Happu Décor began with a vision to transform ordinary spaces into extraordinary living experiences. With a background in architecture and fine arts, Isabella assembled a team of the nation's top designers, artisans, and project managers.</p>
+                            <p>Over the past decade, we've designed over 500 luxury residences across the United States, from Manhattan penthouses to Beverly Hills estates. Our approach combines timeless elegance with modern functionality, creating spaces that are both beautiful and livable.</p>
+                            <p>We believe that true luxury lies in the details – the hand-stitched embroidery on a custom sofa, the precision of handcrafted millwork, the perfect balance of light and space. Every project is a collaboration with our clients, resulting in homes that truly reflect their personalities and lifestyles.</p>
+                            <a href="#portfolio" class="btn">View Our Work</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section class="section-alt" id="services">
+                <div class="container">
+                    <h2>Our Services</h2>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <h3>Full-Service Interior Design</h3>
+                            <p>Comprehensive design solutions from concept to completion, including space planning, custom furnishings, and installation.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-couch"></i>
+                            </div>
+                            <h3>Custom Furniture Design</h3>
+                            <p>Bespoke furniture pieces crafted by master artisans, tailored to your space, style, and functional requirements.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h3>Color & Material Consultation</h3>
+                            <p>Expert guidance on color schemes, material selection, and finishes to create a cohesive and luxurious aesthetic.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <h3>Luxury Residence Staging</h3>
+                            <p>Premium staging services for high-end real estate listings to maximize property value and appeal to discerning buyers.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Portfolio Section -->
+            <section id="portfolio">
+                <div class="container">
+                    <h2>Our Portfolio</h2>
+                    <div class="portfolio-grid">
+                        <!-- Portfolio Item 1 -->
+                        <a href="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" data-lightbox="portfolio" data-title="Manhattan Penthouse - Living Room" class="portfolio-item">
+                            <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Luxury Manhattan penthouse living room design">
+                            <div class="portfolio-overlay">
+                                <h3>Manhattan Penthouse</h3>
+                                <p>Modern luxury with panoramic city views</p>
+                            </div>
+                        </a>
+                        <!-- Portfolio Item 2 -->
+                        <a href="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2053&q=80" data-lightbox="portfolio" data-title="Beverly Hills Villa - Kitchen" class="portfolio-item">
+                            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Luxury Beverly Hills kitchen design">
+                            <div class="portfolio-overlay">
+                                <h3>Beverly Hills Villa</h3>
+                                <p>Italian marble and custom cabinetry</p>
+                            </div>
+                        </a>
+                        <!-- Portfolio Item 3 -->
+                        <a href="https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" data-lightbox="portfolio" data-title="Miami Beach Residence - Master Bedroom" class="portfolio-item">
+                            <img src="https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Luxury Miami beachfront bedroom design">
+                            <div class="portfolio-overlay">
+                                <h3>Miami Beach Residence</h3>
+                                <p>Coastal luxury with ocean views</p>
+                            </div>
+                        </a>
+                        <!-- Portfolio Item 4 -->
+                        <a href="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" data-lightbox="portfolio" data-title="Chicago Townhouse - Dining Room" class="portfolio-item">
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Elegant Chicago dining room design">
+                            <div class="portfolio-overlay">
+                                <h3>Chicago Townhouse</h3>
+                                <p>Historic preservation with modern luxury</p>
+                            </div>
+                        </a>
+                        <!-- Portfolio Item 5 -->
+                        <a href="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" data-lightbox="portfolio" data-title="Aspen Mountain Retreat - Great Room" class="portfolio-item">
+                            <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Rustic luxury Aspen mountain retreat">
+                            <div class="portfolio-overlay">
+                                <h3>Aspen Mountain Retreat</h3>
+                                <p>Rustic elegance with modern amenities</p>
+                            </div>
+                        </a>
+                        <!-- Portfolio Item 6 -->
+                        <a href="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=2053&q=80" data-lightbox="portfolio" data-title="San Francisco Loft - Office" class="portfolio-item">
+                            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Modern San Francisco loft office design">
+                            <div class="portfolio-overlay">
+                                <h3>San Francisco Loft</h3>
+                                <p>Industrial chic with custom workspaces</p>
+                            </div>
+                        </a>
+                        <!-- Portfolio Item 7 -->
+                        <a href="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" data-lightbox="portfolio" data-title="Hamptons Estate - Pool House" class="portfolio-item">
+                            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Luxury Hamptons pool house design">
+                            <div class="portfolio-overlay">
+                                <h3>Hamptons Estate</h3>
+                                <p>Indoor-outdoor luxury living</p>
+                            </div>
+                        </a>
+                        <!-- Portfolio Item 8 -->
+                        <a href="https://images.unsplash.com/photo-1585634917202-6f03b28fc6d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" data-lightbox="portfolio" data-title="Dallas Mansion - Library" class="portfolio-item">
+                            <img src="https://images.unsplash.com/photo-1585634917202-6f03b28fc6d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Traditional Dallas mansion library design">
+                            <div class="portfolio-overlay">
+                                <h3>Dallas Mansion</h3>
+                                <p>Traditional elegance with custom millwork</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials Section -->
+            <section class="section-alt" id="testimonials">
+                <div class="container">
+                    <h2>Client Testimonials</h2>
+                    <div class="testimonials-slider">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Happu Décor transformed our New York penthouse beyond our wildest dreams. Isabella's team understood our vision and executed it flawlessly. The attention to detail and quality of craftsmanship is exceptional."</p>
+                            <div class="client-info">
+                                <div class="client-img">
+                                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Sarah Johnson">
+                                </div>
+                                <div>
+                                    <h4>Sarah Johnson</h4>
+                                    <p>New York, NY</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Working with Happu Décor was an absolute pleasure from start to finish. They managed our entire Beverly Hills renovation, delivering on time and on budget. The result is a home that perfectly balances luxury and comfort."</p>
+                            <div class="client-info">
+                                <div class="client-img">
+                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Rodriguez">
+                                </div>
+                                <div>
+                                    <h4>Michael Rodriguez</h4>
+                                    <p>Beverly Hills, CA</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"The custom furniture pieces created for our Chicago townhouse are absolute works of art. Happu Décor's artisans are incredibly talented. Every guest compliments our home's unique beauty and elegance."</p>
+                            <div class="client-info">
+                                <div class="client-img">
+                                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Jennifer Lee">
+                                </div>
+                                <div>
+                                    <h4>Jennifer Lee</h4>
+                                    <p>Chicago, IL</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 4 -->
+                        <div class="testimonial">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Our Miami beach house needed a complete overhaul. Happu Décor not only redesigned the interior but also improved the flow and functionality of the space. Their team is professional, creative, and a joy to work with."</p>
+                            <div class="client-info">
+                                <div class="client-img">
+                                    <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Robert Chen">
+                                </div>
+                                <div>
+                                    <h4>Robert Chen</h4>
+                                    <p>Miami, FL</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 5 -->
+                        <div class="testimonial">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"From the initial consultation to the final installation, Happu Décor exceeded our expectations at every turn. They sourced unique materials and created a truly one-of-a-kind home that reflects our personality perfectly."</p>
+                            <div class="client-info">
+                                <div class="client-img">
+                                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Amanda Williams">
+                                </div>
+                                <div>
+                                    <h4>Amanda Williams</h4>
+                                    <p>Aspen, CO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact">
+                <div class="container">
+                    <h2>Contact Us</h2>
+                    <div class="contact-container">
+                        <div class="contact-info">
+                            <h3>Let's Create Your Dream Space</h3>
+                            <p>Ready to transform your home? Schedule a consultation with our design team today.</p>
+                            
+                            <div class="contact-detail">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4>Our Studio</h4>
+                                    <p>123 Design District, New York, NY 10001</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-detail">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4>Call Us</h4>
+                                    <p>(212) 555-7890</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-detail">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4>Email Us</h4>
+                                    <p>info@happudecor.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-detail">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4>Business Hours</h4>
+                                    <p>Monday - Friday: 9am - 6pm EST</p>
+                                    <p>Saturday: 10am - 4pm EST</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-form">
+                            <form id="contactForm">
+                                <input type="text" placeholder="Your Name" required>
+                                <input type="email" placeholder="Your Email" required>
+                                <input type="tel" placeholder="Your Phone">
+                                <input type="text" placeholder="Project Location">
+                                <textarea placeholder="Tell us about your project..." required></textarea>
+                                <button type="submit" class="btn">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343008!2d-74.00425878459426!3d40.74076684379132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259bf5c1654f3%3A0xc80f9cfce5383d5d!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1629783086136!5m2!1sen!2s" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </section>
+        `;
+
+        // Privacy Policy Content
+        const privacyPolicyContent = `
+            <section class="policy-page">
+                <div class="container policy-container">
+                    <div class="policy-header">
+                        <h1>Privacy Policy</h1>
+                        <p>Last Updated: November 15, 2023</p>
+                    </div>
+                    
+                    <div class="policy-section">
+                        <p>Happu Décor ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website www.happudecor.com (the "Site") or use our services.</p>
+                        
+                        <h2>1. Information We Collect</h2>
+                        
+                        <h3>Personal Information</h3>
+                        <p>We may collect personal information that you voluntarily provide to us when you:</p>
+                        <ul>
+                            <li>Register on the Site</li>
+                            <li>Express interest in obtaining information about us or our services</li>
+                            <li>Participate in activities on the Site</li>
+                            <li>Contact us directly</li>
+                        </ul>
+                        <p>The personal information we collect may include:</p>
+                        <ul>
+                            <li>Name and contact data (email address, phone number, mailing address)</li>
+                            <li>Payment information (credit card numbers, billing address)</li>
+                            <li>Design preferences and project requirements</li>
+                            <li>Images of your space for design consultations</li>
+                        </ul>
+                        
+                        <h3>Automatically Collected Information</h3>
+                        <p>When you visit our Site, we automatically collect certain information, including:</p>
+                        <ul>
+                            <li>IP address and device information</li>
+                            <li>Browser type and operating system</li>
+                            <li>Referring URLs and pages visited</li>
+                            <li>Time and date of visits</li>
+                            <li>Clickstream data</li>
+                        </ul>
+                        
+                        <h2>2. How We Use Your Information</h2>
+                        <p>We use personal information collected via our Site for a variety of business purposes:</p>
+                        <ul>
+                            <li><strong>Service Delivery:</strong> To provide design services, process payments, and fulfill orders</li>
+                            <li><strong>Communication:</strong> To send you information about your account, design projects, and updates</li>
+                            <li><strong>Marketing:</strong> To send promotional materials about our services (with your consent)</li>
+                            <li><strong>Improvement:</strong> To improve our Site, services, and customer experience</li>
+                            <li><strong>Legal Compliance:</strong> To comply with applicable laws and regulations</li>
+                        </ul>
+                        
+                        <h2>3. Sharing Your Information</h2>
+                        <p>We may share your information in the following situations:</p>
+                        <ul>
+                            <li><strong>Service Providers:</strong> With third-party vendors who perform services on our behalf</li>
+                            <li><strong>Business Transfers:</strong> During negotiations of any merger or sale of company assets</li>
+                            <li><strong>Legal Requirements:</strong> When required by law or to protect our rights</li>
+                            <li><strong>With Your Consent:</strong> When you explicitly authorize us to share your information</li>
+                        </ul>
+                        
+                        <h2>4. Data Security</h2>
+                        <p>We implement appropriate technical and organizational security measures to protect your personal information. However, no electronic transmission over the Internet can be guaranteed to be 100% secure.</p>
+                        
+                        <h2>5. Your Privacy Rights</h2>
+                        <p>Depending on your location, you may have the following rights regarding your personal information:</p>
+                        <ul>
+                            <li>Right to access and obtain a copy of your personal data</li>
+                            <li>Right to rectify inaccurate or incomplete data</li>
+                            <li>Right to erasure ("right to be forgotten")</li>
+                            <li>Right to restrict processing of your personal data</li>
+                            <li>Right to data portability</li>
+                            <li>Right to object to processing</li>
+                            <li>Right to withdraw consent at any time</li>
+                        </ul>
+                        
+                        <h2>6. Children's Privacy</h2>
+                        <p>Our Site is not intended for children under 16 years of age. We do not knowingly collect personal information from children under 16.</p>
+                        
+                        <h2>7. Changes to This Privacy Policy</h2>
+                        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.</p>
+                        
+                        <h2>8. Contact Us</h2>
+                        <p>If you have questions or comments about this Privacy Policy, please contact us at:</p>
+                        <p>Happu Décor<br>
+                        123 Design District<br>
+                        New York, NY 10001<br>
+                        Email: privacy@happudecor.com<br>
+                        Phone: (212) 555-7890</p>
+                    </div>
+                    
+                    <a href="index.html" class="policy-back-btn"><i class="fas fa-arrow-left"></i> Back to Homepage</a>
+                </div>
+            </section>
+        `;
+
+        // Terms of Service Content
+        const termsContent = `
+            <section class="policy-page">
+                <div class="container policy-container">
+                    <div class="policy-header">
+                        <h1>Terms of Service</h1>
+                        <p>Last Updated: November 15, 2023</p>
+                    </div>
+                    
+                    <div class="policy-section">
+                        <p>Please read these Terms of Service ("Terms," "Terms of Service") carefully before using the www.happudecor.com website (the "Site") operated by Happu Décor ("us," "we," or "our").</p>
+                        
+                        <h2>1. Acceptance of Terms</h2>
+                        <p>By accessing or using the Site, you agree to be bound by these Terms. If you disagree with any part of the terms, you may not access the Site.</p>
+                        
+                        <h2>2. Design Services Agreement</h2>
+                        <p>All design services provided by Happu Décor require a separate written Design Services Agreement that will detail:</p>
+                        <ul>
+                            <li>Scope of services and deliverables</li>
+                            <li>Project timeline and milestones</li>
+                            <li>Fee structure and payment schedule</li>
+                            <li>Client responsibilities and approvals</li>
+                            <li>Warranty and limitation of liability</li>
+                        </ul>
+                        <p>The Design Services Agreement supersedes any prior agreements or understandings, whether oral or written.</p>
+                        
+                        <h2>3. Intellectual Property</h2>
+                        <h3>Our Intellectual Property</h3>
+                        <p>All content on this Site, including text, graphics, logos, images, designs, and software, is the property of Happu Décor and protected by United States and international copyright laws.</p>
+                        
+                        <h3>Client Property</h3>
+                        <p>Any materials, images, or intellectual property provided by you for your project remain your property. You grant Happu Décor a license to use such materials solely for the purpose of providing design services to you.</p>
+                        
+                        <h3>Design Deliverables</h3>
+                        <p>Upon full payment, you receive a license to use the design deliverables for your personal, non-commercial use. Happu Décor retains the right to use project images for marketing purposes unless otherwise specified in the Design Services Agreement.</p>
+                        
+                        <h2>4. Fees and Payments</h2>
+                        <p>All fees for design services are specified in the Design Services Agreement. Payment terms are as follows:</p>
+                        <ul>
+                            <li>A non-refundable retainer is required to commence design services</li>
+                            <li>Progress payments are due at specified project milestones</li>
+                            <li>Final payment is due upon project completion before installation</li>
+                            <li>Late payments may incur interest charges of 1.5% per month</li>
+                        </ul>
+                        
+                        <h2>5. Cancellation and Refund Policy</h2>
+                        <p>Cancellation policies are outlined in the Design Services Agreement. Generally:</p>
+                        <ul>
+                            <li>The initial retainer is non-refundable</li>
+                            <li>Cancellation after project commencement may result in additional fees</li>
+                            <li>Refunds for completed work are not provided</li>
+                        </ul>
+                        
+                        <h2>6. Limitation of Liability</h2>
+                        <p>Happu Décor shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from:</p>
+                        <ul>
+                            <li>Your access to or use of or inability to access or use the Site</li>
+                            <li>Any conduct or content of any third party on the Site</li>
+                            <li>Any content obtained from the Site</li>
+                            <li>Unauthorized access, use, or alteration of your transmissions or content</li>
+                        </ul>
+                        
+                        <h2>7. Governing Law</h2>
+                        <p>These Terms shall be governed and construed in accordance with the laws of the State of New York, without regard to its conflict of law provisions.</p>
+                        
+                        <h2>8. Changes to Terms</h2>
+                        <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. We will provide notice of any changes by posting the new Terms on this Site.</p>
+                        
+                        <h2>9. Contact Information</h2>
+                        <p>If you have any questions about these Terms, please contact us at:</p>
+                        <p>Happu Décor<br>
+                        123 Design District<br>
+                        New York, NY 10001<br>
+                        Email: legal@happudecor.com<br>
+                        Phone: (212) 555-7890</p>
+                    </div>
+                    
+                    <a href="index.html" class="policy-back-btn"><i class="fas fa-arrow-left"></i> Back to Homepage</a>
+                </div>
+            </section>
+        `;
+
+        // Cookie Policy Content
+        const cookiePolicyContent = `
+            <section class="policy-page">
+                <div class="container policy-container">
+                    <div class="policy-header">
+                        <h1>Cookie Policy</h1>
+                        <p>Last Updated: November 15, 2023</p>
+                    </div>
+                    
+                    <div class="policy-section">
+                        <p>This Cookie Policy explains how Happu Décor ("we," "us," or "our") uses cookies and similar technologies on our website www.happudecor.com (the "Site").</p>
+                        
+                        <h2>1. What Are Cookies?</h2>
+                        <p>Cookies are small text files that are placed on your device when you visit our Site. They are widely used to make websites work more efficiently and provide information to the website owners.</p>
+                        
+                        <h2>2. Types of Cookies We Use</h2>
+                        
+                        <h3>Essential Cookies</h3>
+                        <p>These cookies are necessary for the website to function and cannot be switched off in our systems.</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Cookie Name</th>
+                                    <th>Purpose</th>
+                                    <th>Duration</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>session_id</td>
+                                    <td>Maintains your session on our Site</td>
+                                    <td>Session</td>
+                                </tr>
+                                <tr>
+                                    <td>csrf_token</td>
+                                    <td>Security protection against cross-site request forgery</td>
+                                    <td>Session</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <h3>Performance Cookies</h3>
+                        <p>These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our Site.</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Cookie Name</th>
+                                    <th>Purpose</th>
+                                    <th>Duration</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>_ga</td>
+                                    <td>Google Analytics - distinguishes users</td>
+                                    <td>2 years</td>
+                                </tr>
+                                <tr>
+                                    <td>_gid</td>
+                                    <td>Google Analytics - distinguishes users</td>
+                                    <td>24 hours</td>
+                                </tr>
+                                <tr>
+                                    <td>_gat</td>
+                                    <td>Google Analytics - throttles request rate</td>
+                                    <td>1 minute</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <h3>Functionality Cookies</h3>
+                        <p>These cookies enable the website to provide enhanced functionality and personalization.</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Cookie Name</th>
+                                    <th>Purpose</th>
+                                    <th>Duration</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>design_preferences</td>
+                                    <td>Remembers your design style preferences</td>
+                                    <td>30 days</td>
+                                </tr>
+                                <tr>
+                                    <td>currency</td>
+                                    <td>Remembers your preferred currency</td>
+                                    <td>Session</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <h3>Targeting/Advertising Cookies</h3>
+                        <p>These cookies may be set through our site by our advertising partners to build a profile of your interests.</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Cookie Name</th>
+                                    <th>Purpose</th>
+                                    <th>Duration</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>_fbp</td>
+                                    <td>Facebook pixel for advertising</td>
+                                    <td>3 months</td>
+                                </tr>
+                                <tr>
+                                    <td>ads/ga-audiences</td>
+                                    <td>Google Ads targeting</td>
+                                    <td>Session</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <h2>3. How to Control Cookies</h2>
+                        <p>You can control and/or delete cookies as you wish. You can delete all cookies that are already on your computer and you can set most browsers to prevent them from being placed.</p>
+                        
+                        <h3>Browser Controls</h3>
+                        <p>Most web browsers allow some control of most cookies through the browser settings. To find out more about cookies, including how to see what cookies have been set, visit <a href="https://www.aboutcookies.org" target="_blank">www.aboutcookies.org</a>.</p>
+                        
+                        <h3>Opt-Out Tools</h3>
+                        <p>You can opt out of targeted advertising by:</p>
+                        <ul>
+                            <li>Facebook: <a href="https://www.facebook.com/settings/?tab=ads" target="_blank">https://www.facebook.com/settings/?tab=ads</a></li>
+                            <li>Google: <a href="https://adssettings.google.com" target="_blank">https://adssettings.google.com</a></li>
+                            <li>Digital Advertising Alliance: <a href="https://optout.aboutads.info" target="_blank">https://optout.aboutads.info</a></li>
+                        </ul>
+                        
+                        <h2>4. Changes to This Cookie Policy</h2>
+                        <p>We may update this Cookie Policy from time to time. We will notify you of any changes by posting the new Cookie Policy on this page.</p>
+                        
+                        <h2>5. Contact Us</h2>
+                        <p>If you have any questions about our use of cookies, please contact us at:</p>
+                        <p>Happu Décor<br>
+                        123 Design District<br>
+                        New York, NY 10001<br>
+                        Email: privacy@happudecor.com<br>
+                        Phone: (212) 555-7890</p>
+                    </div>
+                    
+                    <a href="index.html" class="policy-back-btn"><i class="fas fa-arrow-left"></i> Back to Homepage</a>
+                </div>
+            </section>
+        `;
+
+        // Disclaimer Content
+        const disclaimerContent = `
+            <section class="policy-page">
+                <div class="container policy-container">
+                    <div class="policy-header">
+                        <h1>Disclaimer</h1>
+                        <p>Last Updated: November 15, 2023</p>
+                    </div>
+                    
+                    <div class="policy-section">
+                        <h2>1. Website Content</h2>
+                        <p>The information contained on www.happudecor.com (the "Site") is for general information purposes only. Happu Décor assumes no responsibility for errors or omissions in the contents of the Site.</p>
+                        
+                        <h2>2. Professional Advice</h2>
+                        <p>The content on this Site does not constitute professional interior design advice. While we strive to provide accurate and up-to-date information, you should consult with a qualified interior designer or architect for specific advice tailored to your situation.</p>
+                        
+                        <h2>3. Design Results</h2>
+                        <p>Past design results featured on our Site do not guarantee similar outcomes for your project. Each design project is unique, and results may vary based on numerous factors including budget, space constraints, and individual preferences.</p>
+                        
+                        <h2>4. Product Representations</h2>
+                        <p>We make every effort to display as accurately as possible the colors, features, specifications, and details of products available through our Site. However, we do not guarantee that your computer monitor's display of any color will be accurate.</p>
+                        
+                        <h2>5. External Links</h2>
+                        <p>The Site may contain links to external websites that are not provided or maintained by or in any way affiliated with Happu Décor. Please note that we do not guarantee the accuracy, relevance, timeliness, or completeness of any information on these external websites.</p>
+                        
+                        <h2>6. Limitation of Liability</h2>
+                        <p>In no event shall Happu Décor be liable for any special, direct, indirect, consequential, or incidental damages or any damages whatsoever, whether in an action of contract, negligence, or other tort, arising out of or in connection with the use of the Site or the contents of the Site.</p>
+                        
+                        <h2>7. Copyright and Trademark</h2>
+                        <p>All designs, images, and content on this Site are the property of Happu Décor or used with permission. Unauthorized use may violate copyright, trademark, and other laws.</p>
+                        
+                        <h2>8. Changes to This Disclaimer</h2>
+                        <p>We reserve the right to make changes to this Disclaimer at any time. We will notify you about significant changes by placing a prominent notice on our Site.</p>
+                        
+                        <h2>9. Contact Information</h2>
+                        <p>If you have any questions about this Disclaimer, please contact us at:</p>
+                        <p>Happu Décor<br>
+                        123 Design District<br>
+                        New York, NY 10001<br>
+                        Email: legal@happudecor.com<br>
+                        Phone: (212) 555-7890</p>
+                    </div>
+                    
+                    <a href="index.html" class="policy-back-btn"><i class="fas fa-arrow-left"></i> Back to Homepage</a>
+                </div>
+            </section>
+        `;
+
+        // Shipping & Returns Content
+        const shippingContent = `
+            <section class="policy-page">
+                <div class="container policy-container">
+                    <div class="policy-header">
+                        <h1>Shipping & Returns Policy</h1>
+                        <p>Last Updated: November 15, 2023</p>
+                    </div>
+                    
+                    <div class="policy-section">
+                        <h2>1. Shipping Policy</h2>
+                        
+                        <h3>Processing Time</h3>
+                        <p>Orders are processed within 3-5 business days. Custom furniture and made-to-order items typically require 8-12 weeks for production before shipping.</p>
+                        
+                        <h3>Shipping Methods</h3>
+                        <p>We offer several shipping options:</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Service</th>
+                                    <th>Delivery Time</th>
+                                    <th>Cost</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Standard Shipping</td>
+                                    <td>7-10 business days</td>
+                                    <td>Calculated at checkout</td>
+                                </tr>
+                                <tr>
+                                    <td>Express Shipping</td>
+                                    <td>3-5 business days</td>
+                                    <td>$49.99 + calculated shipping</td>
+                                </tr>
+                                <tr>
+                                    <td>White Glove Delivery</td>
+                                    <td>Scheduled delivery (for large items)</td>
+                                    <td>Quoted per item</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <h3>White Glove Delivery</h3>
+                        <p>For large furniture items, we offer white glove delivery service which includes:</p>
+                        <ul>
+                            <li>Delivery to the room of your choice</li>
+                            <li>Assembly and setup</li>
+                            <li>Removal of packaging materials</li>
+                            <li>Inspection for any damage</li>
+                        </ul>
+                        
+                        <h3>International Shipping</h3>
+                        <p>We currently ship to the contiguous United States only. Please contact us for special arrangements regarding Alaska, Hawaii, or international destinations.</p>
+                        
+                        <h3>Shipping Damages</h3>
+                        <p>Please inspect your order upon delivery. If items are damaged during shipping, contact us within 48 hours of delivery at support@happudecor.com with photos of the damage.</p>
+                        
+                        <h2>2. Returns & Exchanges</h2>
+                        
+                        <h3>Return Policy</h3>
+                        <p>We accept returns within 30 days of delivery for most non-custom items. To be eligible for a return, your item must be:</p>
+                        <ul>
+                            <li>In the same condition as received</li>
+                            <li>In the original packaging</li>
+                            <li>Unused and undamaged</li>
+                            <li>Accompanied by the original receipt or proof of purchase</li>
+                        </ul>
+                        
+                        <h3>Non-Returnable Items</h3>
+                        <p>The following items cannot be returned:</p>
+                        <ul>
+                            <li>Custom furniture and made-to-order items</li>
+                            <li>Personalized or monogrammed products</li>
+                            <li>Clearance or final sale items</li>
+                            <li>Items marked as non-returnable at purchase</li>
+                            <li>Opened bedding, bath, or wellness products</li>
+                        </ul>
+                        
+                        <h3>Return Process</h3>
+                        <ol>
+                            <li>Contact our customer service team at returns@happudecor.com to initiate a return</li>
+                            <li>Receive a Return Authorization (RA) number and instructions</li>
+                            <li>Package the item securely in its original packaging</li>
+                            <li>Include the RA number on the outside of the package</li>
+                            <li>Ship the item to the address provided</li>
+                        </ol>
+                        
+                        <h3>Return Shipping Costs</h3>
+                        <p>Customers are responsible for return shipping costs unless the return is due to our error or defective merchandise. Original shipping costs are non-refundable.</p>
+                        
+                        <h3>Refunds</h3>
+                        <p>Once we receive and inspect your return, we will notify you of the approval or rejection of your refund. If approved, your refund will be processed to your original payment method within 10 business days.</p>
+                        
+                        <h3>Exchanges</h3>
+                        <p>We only replace items if they are defective or damaged. For exchanges, please follow the return process and place a new order for the desired item.</p>
+                        
+                        <h2>3. Cancellations</h2>
+                        <p>You may cancel your order within 24 hours of placing it without penalty. After 24 hours, cancellation may incur a restocking fee of 15% of the item price.</p>
+                        
+                        <h2>4. Contact Us</h2>
+                        <p>If you have questions about our Shipping & Returns Policy, please contact us at:</p>
+                        <p>Happu Décor Customer Service<br>
+                        123 Design District<br>
+                        New York, NY 10001<br>
+                        Email: support@happudecor.com<br>
+                        Phone: (212) 555-7890<br>
+                        Hours: Monday-Friday, 9am-6pm EST</p>
+                    </div>
+                    
+                    <a href="index.html" class="policy-back-btn"><i class="fas fa-arrow-left"></i> Back to Homepage</a>
+                </div>
+            </section>
+        `;
+
+        // Accessibility Statement Content
+        const accessibilityContent = `
+            <section class="policy-page">
+                <div class="container policy-container">
+                    <div class="policy-header">
+                        <h1>Accessibility Statement</h1>
+                        <p>Last Updated: November 15, 2023</p>
+                    </div>
+                    
+                    <div class="policy-section">
+                        <h2>Our Commitment</h2>
+                        <p>Happu Décor is committed to ensuring digital accessibility for people with disabilities. We are continually improving the user experience for everyone and applying the relevant accessibility standards.</p>
+                        
+                        <h2>Conformance Status</h2>
+                        <p>The Web Content Accessibility Guidelines (WCAG) defines requirements for designers and developers to improve accessibility for people with disabilities. It defines three levels of conformance: Level A, Level AA, and Level AAA.</p>
+                        <p>Happu Décor's website is partially conformant with WCAG 2.1 level AA. Partially conformant means that some parts of the content do not fully conform to the accessibility standard.</p>
+                        
+                        <h2>Measures to Support Accessibility</h2>
+                        <p>Happu Décor takes the following measures to ensure accessibility:</p>
+                        <ul>
+                            <li>Include accessibility as part of our mission statement</li>
+                            <li>Include accessibility throughout our internal policies</li>
+                            <li>Appoint an accessibility officer and/or ombudsperson</li>
+                            <li>Provide continual accessibility training for our staff</li>
+                            <li>Assign clear accessibility targets and responsibilities</li>
+                        </ul>
+                        
+                        <h2>Accessibility Features</h2>
+                        <p>Our website includes the following accessibility features:</p>
+                        
+                        <h3>Keyboard Navigation</h3>
+                        <p>Our website can be navigated using a keyboard alone, without requiring a mouse.</p>
+                        
+                        <h3>Screen Reader Compatibility</h3>
+                        <p>We strive to make our website compatible with screen readers and other assistive technologies.</p>
+                        
+                        <h3>Alternative Text</h3>
+                        <p>We provide alternative text for images to ensure that users with visual impairments can understand the content.</p>
+                        
+                        <h3>Color Contrast</h3>
+                        <p>We maintain sufficient color contrast between text and background to aid users with visual impairments.</p>
+                        
+                        <h3>Resizable Text</h3>
+                        <p>Users can resize text up to 200% without loss of content or functionality.</p>
+                        
+                        <h3>Accessible Forms</h3>
+                        <p>Our forms include properly labeled fields and error messages to assist users with disabilities.</p>
+                        
+                        <h2>Feedback</h2>
+                        <p>We welcome your feedback on the accessibility of Happu Décor's website. Please let us know if you encounter accessibility barriers:</p>
+                        <ul>
+                            <li>Phone: (212) 555-7890</li>
+                            <li>Email: accessibility@happudecor.com</li>
+                            <li>Address: 123 Design District, New York, NY 10001</li>
+                        </ul>
+                        <p>We try to respond to feedback within 5 business days.</p>
+                        
+                        <h2>Technical Specifications</h2>
+                        <p>Accessibility of Happu Décor's website relies on the following technologies to work with the particular combination of web browser and any assistive technologies or plugins installed on your computer:</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <p>These technologies are relied upon for conformance with the accessibility standards used.</p>
+                        
+                        <h2>Assessment Approach</h2>
+                        <p>Happu Décor assessed the accessibility of our website by the following approaches:</p>
+                        <ul>
+                            <li>Self-evaluation</li>
+                            <li>External evaluation by accessibility consultants</li>
+                        </ul>
+                        
+                        <h2>Compatibility with Browsers and Assistive Technology</h2>
+                        <p>Happu Décor's website is designed to be compatible with the following assistive technologies:</p>
+                        <ul>
+                            <li>Recent versions of screen readers (JAWS, NVDA, VoiceOver)</li>
+                            <li>Recent versions of major browsers (Chrome, Firefox, Safari, Edge)</li>
+                            <li>Operating system accessibility features</li>
+                        </ul>
+                        
+                        <h2>Limitations and Alternatives</h2>
+                        <p>Despite our best efforts to ensure accessibility of Happu Décor's website, there may be some limitations. Below is a description of known limitations, and potential solutions:</p>
+                        
+                        <h3>Third-Party Content</h3>
+                        <p>Some third-party content embedded on our site (such as social media feeds or maps) may not be fully accessible. We provide alternative ways to access this information when possible.</p>
+                        
+                        <h3>PDF Documents</h3>
+                        <p>Some older PDF documents may not be fully accessible. We are working to replace these with accessible versions. If you need assistance with any document, please contact us.</p>
+                        
+                        <h2>Formal Approval</h2>
+                        <p>This Accessibility Statement is approved by:</p>
+                        <p>Happu Décor Management<br>
+                        Isabella Sterling, Founder & CEO</p>
+                        
+                        <h2>Formal Complaints</h2>
+                        <p>We aim to respond to accessibility feedback within 5 business days, and to propose a solution within 10 business days. You are entitled to escalate a complaint to the relevant authority, should you be dissatisfied with our response to you.</p>
+                    </div>
+                    
+                    <a href="index.html" class="policy-back-btn"><i class="fas fa-arrow-left"></i> Back to Homepage</a>
+                </div>
+            </section>
+        `;
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navLinks.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+        
+        // Policy Links
+        const privacyLink = document.getElementById('privacyLink');
+        const termsLink = document.getElementById('termsLink');
+        const cookieLink = document.getElementById('cookieLink');
+        const disclaimerLink = document.getElementById('disclaimerLink');
+        const shippingLink = document.getElementById('shippingLink');
+        const accessibilityLink = document.getElementById('accessibilityLink');
+        
+        // Function to load content
+        function loadContent(content) {
+            document.getElementById('content').innerHTML = content;
+            document.documentElement.scrollTop = 0;
+            
+            // Reinitialize event listeners for forms
+            if (content.includes('contactForm')) {
+                const contactForm = document.getElementById('contactForm');
+                if (contactForm) {
+                    contactForm.addEventListener('submit', (e) => {
+                        e.preventDefault();
+                        alert('Thank you for your message! We will contact you within 24 hours.');
+                        contactForm.reset();
+                    });
+                }
+            }
+            
+            // Update page title
+            if (content === homepageContent) {
+                document.title = "Happu Décor | Luxury Home Décor & Interior Design | USA";
+            } else if (content === privacyPolicyContent) {
+                document.title = "Privacy Policy | Happu Décor";
+            } else if (content === termsContent) {
+                document.title = "Terms of Service | Happu Décor";
+            } else if (content === cookiePolicyContent) {
+                document.title = "Cookie Policy | Happu Décor";
+            } else if (content === disclaimerContent) {
+                document.title = "Disclaimer | Happu Décor";
+            } else if (content === shippingContent) {
+                document.title = "Shipping & Returns | Happu Décor";
+            } else if (content === accessibilityContent) {
+                document.title = "Accessibility Statement | Happu Décor";
+            }
+        }
+        
+        // Set up policy link click handlers
+        privacyLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            loadContent(privacyPolicyContent);
+            history.pushState({page: 'privacy'}, '', 'privacy-policy.html');
+        });
+        
+        termsLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            loadContent(termsContent);
+            history.pushState({page: 'terms'}, '', 'terms-of-service.html');
+        });
+        
+        cookieLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            loadContent(cookiePolicyContent);
+            history.pushState({page: 'cookie'}, '', 'cookie-policy.html');
+        });
+        
+        disclaimerLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            loadContent(disclaimerContent);
+            history.pushState({page: 'disclaimer'}, '', 'disclaimer.html');
+        });
+        
+        shippingLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            loadContent(shippingContent);
+            history.pushState({page: 'shipping'}, '', 'shipping-returns.html');
+        });
+        
+        accessibilityLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            loadContent(accessibilityContent);
+            history.pushState({page: 'accessibility'}, '', 'accessibility-statement.html');
+        });
+        
+        // Handle browser back/forward buttons
+        window.addEventListener('popstate', function(event) {
+            // Default to homepage if no state
+            if (!event.state || event.state.page === 'home') {
+                loadContent(homepageContent);
+            } else if (event.state.page === 'privacy') {
+                loadContent(privacyPolicyContent);
+            } else if (event.state.page === 'terms') {
+                loadContent(termsContent);
+            } else if (event.state.page === 'cookie') {
+                loadContent(cookiePolicyContent);
+            } else if (event.state.page === 'disclaimer') {
+                loadContent(disclaimerContent);
+            } else if (event.state.page === 'shipping') {
+                loadContent(shippingContent);
+            } else if (event.state.page === 'accessibility') {
+                loadContent(accessibilityContent);
+            }
+        });
+        
+        // Check URL on page load
+        function checkUrl() {
+            const path = window.location.pathname;
+            if (path.includes('privacy-policy')) {
+                loadContent(privacyPolicyContent);
+                history.replaceState({page: 'privacy'}, '', 'privacy-policy.html');
+            } else if (path.includes('terms-of-service')) {
+                loadContent(termsContent);
+                history.replaceState({page: 'terms'}, '', 'terms-of-service.html');
+            } else if (path.includes('cookie-policy')) {
+                loadContent(cookiePolicyContent);
+                history.replaceState({page: 'cookie'}, '', 'cookie-policy.html');
+            } else if (path.includes('disclaimer')) {
+                loadContent(disclaimerContent);
+                history.replaceState({page: 'disclaimer'}, '', 'disclaimer.html');
+            } else if (path.includes('shipping-returns')) {
+                loadContent(shippingContent);
+                history.replaceState({page: 'shipping'}, '', 'shipping-returns.html');
+            } else if (path.includes('accessibility-statement')) {
+                loadContent(accessibilityContent);
+                history.replaceState({page: 'accessibility'}, '', 'accessibility-statement.html');
+            } else {
+                loadContent(homepageContent);
+                history.replaceState({page: 'home'}, '', 'index.html');
+            }
+        }
+        
+        // Initialize page
+        checkUrl();
+        
+        // Lightbox configuration
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'albumLabel': "Project %1 of %2"
+        });
+    </script>
+</body>
+</html>
